@@ -7,5 +7,40 @@ body {
     height: 100%;
 }
 body {
-   
+    background: #e2e7ec;
+}
+.ba-flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1130px;
+    min-width: 500px;
+    min-height: 1110px;
+    max-height: 3000px;
+    margin: 90px auto;
+}
+.ba-flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: -20px;
+}
+.ba-cell {
+    width: 360px;
+    height: 540px;
+    flex-grow: 1;
+    background: #fff;
+    margin-right: 20px;
+}
+.ba-cell--large {
+    width: 740px;
+    flex-grow: 2;
+}
+.ba-cell__img {
+    width: 100%;
+    height: 251px;
+}
+.ba-cell__img--large {
+    width: 100%;
+    height: 540px;
 }
