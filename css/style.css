@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+   
+}
