@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Hans_Kendrick';
+    src: url('../fonts/hanskendrick-regular-webfont.woff2') format('woff2'),
+    url('../fonts/hanskendrick-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 * {
     box-sizing: border-box;
     transition: all 0.1s ease-in;
@@ -8,6 +16,7 @@ body {
 }
 body {
     background: #e2e7ec;
+    font-family: 'Hans_Kendrick', sans-serif;
 }
 .ba-flex-container {
     display: flex;
@@ -35,6 +44,7 @@ body {
 .ba-cell--large {
     width: 740px;
     flex-grow: 2;
+    position: relative;
 }
 .ba-cell__img {
     width: 100%;
@@ -43,4 +53,40 @@ body {
 .ba-cell__img--large {
     width: 100%;
     height: 540px;
+}
+.ba-cell__date {
+    width: 133px;
+    height: 13px;
+    color: #818181;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.ba-cell__title {
+    width: 307px;
+    height: 78px;
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.ba-cell__title--large {
+    width: 433px;
+    height: 60px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+.ba-cell__date--large {
+    color: #818181;
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
 }
