@@ -34,26 +34,44 @@ body {
     margin-bottom: 20px;
     margin-right: -20px;
 }
-.ba-cell {
+.ba-cell--small {
     max-width: 360px;
+    min-width: 150px;
     height: 540px;
     flex-grow: 1;
+    flex-shrink: 1;
     background: #fff;
     margin-right: 20px;
 }
 .ba-cell--large {
     max-width: 740px;
+    min-width: 500px;
+    height: 540px;
     flex-grow: 2;
+    flex-shrink: 1;
     position: relative;
 }
-.ba-cell__img {
-    width: 100%;
-    height: 251px;
+.ba-cell-1-1 {
+    background: url("../assets/layer-8.png") no-repeat;
 }
-.ba-cell__img--large {
-    width: 100%;
-    height: 540px;
+.ba-cell-1-2 {
+    background: url("../assets/layer-2.png") no-repeat;
 }
+.ba-cell-2-1 {
+    background: url("../assets/layer-5.png") no-repeat;
+}
+.ba-cell-2-2 {
+    background: url("../assets/layer-7.png") no-repeat;
+}
+.ba-cell-2-3 {
+    background: url("../assets/layer-7.png") no-repeat;
+}
+
+
+
+
+
+
 .ba-cell__date {
     width: 133px;
     height: 13px;
