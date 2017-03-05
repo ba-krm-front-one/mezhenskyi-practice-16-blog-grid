@@ -120,6 +120,7 @@ body {
 }
 .ba-loading__title {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .ba-loading__title:before {
