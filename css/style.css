@@ -35,21 +35,35 @@ body {
 }
 .ba-column {
     padding: 20px;
-}
-.ba-cell--large {
-    min-width: 740px;
-    height: 540px;
-    flex-grow: 2;
-    flex-shrink: 1;
-    position: relative;
-}
-.ba-cell--small {
-    max-width: 380px;
-    background: #ffffff;
-    height: 540px;
-    padding: 25px 0 25px 28px;
     flex-grow: 1;
     flex-shrink: 1;
+    min-height: 560px;
+    position: relative;
+    max-width: 380px;
+    min-width: 200px;
+}
+
+.ba-first-row .ba-column:first-child{
+    max-width: none;
+    flex-grow: 2;
+    flex-shrink: 1;
+    min-width: 380px;
+}
+
+.ba-cell--large {
+    /*min-width: 740px;*/
+    /*height: 540px;*/
+    /*flex-grow: 2;
+    flex-shrink: 1;*/
+    /*position: relative;*/
+}
+.ba-cell--small {
+    /*max-width: 380px;*/
+    background: #ffffff;
+    min-height: 540px;
+    padding: 25px 0 25px 28px;
+    /*flex-grow: 1;
+    flex-shrink: 1;*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -58,19 +72,25 @@ body {
 }
 
 .ba-cell-1-1 {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/layer-8.png") no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/layer-8.png") center no-repeat;
+    max-width: 740px;
+    min-height: 540px;
 }
 .ba-cell-1-2 {
     background: #fff url("../assets/layer-2.png") no-repeat;
+    background-size: contain;
 }
 .ba-cell-2-1 {
     background: #fff url("../assets/layer-5.png") no-repeat;
+    background-size: contain;
 }
 .ba-cell-2-2 {
     background: #fff url("../assets/layer-7.png") no-repeat;
+    background-size: contain;
 }
 .ba-cell-2-3 {
     background: #fff url("../assets/white-car.png") no-repeat;
+    background-size: contain;
 }
 .ba-img {
     margin-top: 58px;
