@@ -22,12 +22,9 @@ body {
     background: #e2e7ec;
     font-family: 'Hans_Kendrick', sans-serif;
 }
-.ba-flex-container {
-    display: flex;
-    flex-flow: column wrap;
-    max-width: 1140px;
-    min-width: 500px;
-    min-height: 1400px;
+.ba-container {
+    max-width: 1180px;
+    min-height: 1200px;
     margin: 80px auto;
 }
 .ba-first-row,
@@ -37,7 +34,7 @@ body {
     justify-content: space-between;
 }
 .ba-column {
-    padding: 10px;
+    padding: 20px;
 }
 .ba-cell--large {
     min-width: 740px;
@@ -47,7 +44,7 @@ body {
     position: relative;
 }
 .ba-cell--small {
-    min-width: 360px;
+    max-width: 380px;
     background: #ffffff;
     height: 540px;
     padding: 25px 0 25px 28px;
